@@ -14,7 +14,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install pnpm
-        run: wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.shrc" SHELL="$(which sh)" sh -
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.9.0
         
       - name: Set up Node.js
         uses: actions/setup-node@v3
