@@ -8,7 +8,7 @@ No more state setters. No more callback gymnastics. Just state updates, like thi
 ```javascript
 import { useState } from 'better-state'; // not a real package (yet, and hopefully never)
 
-// Set up your state (notice how we don’t even need `setState` anymore)
+// Set up your state (notice how we don't even need `setState` anymore)
 const state = useState({
   todos: [],
   input: "",
@@ -36,7 +36,7 @@ pnpm dev
 
 And if you want to build the project, just run:
 ```bash
-pnpm build
+pnpm build:ts && pnpm build:vite
 ```  
 
 ## Features  
